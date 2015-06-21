@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="#4caf50">
+
+        <LinearLayout android:id="@+id/profile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:orientation="vertical"
+            android:paddingBottom="5dip"
+            android:padding="10dip"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblPostMeal"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:textColor="#372c24"
+                android:text="What's Cookin'?"
+                android:layout_gravity="center"
+                style="@style/Base.TextAppearance.AppCompat.Title"
+                android:textSize="25dp" />
+
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="Date &amp; Time"/>
+
+            <EditText android:id="@+id/pm_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:textColor="#372c24"
+                android:singleLine="true"
+                android:layout_marginBottom="10dip"/>
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="Number of guests"/>
+
+            <EditText
+                android:id="@+id/pm_guest"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:textColor="#372c24"
+                android:singleLine="true"
+                android:layout_marginBottom="10dip"/>
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="SignUp Time"/>
+
+            <EditText
+                android:id="@+id/pm_chipin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:textColor="#372c24"
+                android:singleLine="true"
+                android:layout_marginBottom="10dip" />
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="Name"/>
+
+            <EditText
+                android:id="@+id/pm_cusinename"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:textColor="#372c24"
+                android:singleLine="true"
+                android:layout_marginBottom="10dip"/>
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="Type of Cuisine"/>
+
+            <EditText
+                android:id="@+id/pm_type"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:textColor="#372c24"
+                android:singleLine="true"
+                android:layout_marginBottom="10dip"/>
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="Description"/>
+
+            <EditText
+                android:id="@+id/pm_desc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:textColor="#372c24"
+                android:lines="2"
+                android:layout_marginBottom="10dip"/>
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="Upload or Take Picture"/>
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/imageView"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:layout_below="@+id/profile"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/camera"/>
+
+            <Button android:id="@+id/btnSubmit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/wallet_holo_blue_light"
+                android:text="Submit"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:onClick="onSubmit" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
