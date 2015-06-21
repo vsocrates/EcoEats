@@ -181,12 +181,13 @@
                     android:text="April 8, 2015"
                     android:textSize="18dp"/>
 
-            </LinearLayout>
-            <TextView android:layout_height="fill_parent"
+            <TextView android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:id="@+id/review2"
                 android:text="Sunny made 3 fantastic coconut-based curries that made me want more with every bite I took. Needless to say, I had more than just seconds."
                 android:textColor="#ffffff">
             </TextView>
+
+        </LinearLayout>
     </RelativeLayout>
 </ScrollView>

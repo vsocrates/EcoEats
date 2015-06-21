@@ -176,9 +176,8 @@
                     <TextView
                         android:textColor="#ffffff"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_gravity="top|center_horizontal"
-                        android:layout_weight="0.15"
                         android:text="Pita" />
 
                 </LinearLayout>
@@ -246,9 +245,8 @@
                     <TextView
                         android:textColor="#ffffff"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="32dp"
                         android:layout_gravity="top|center_horizontal"
-                        android:layout_weight="0.15"
                         android:text="Curry" />
 
                 </LinearLayout>
@@ -258,8 +256,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right|center_vertical"
-                    android:layout_weight="0.2"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_weight=".1">
 
                     <TextView
                         android:textColor="#ffffff"
@@ -328,7 +326,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right|center_vertical"
-                    android:layout_weight="0.5"
+                    android:layout_weight="0.2"
                     android:orientation="vertical">
 
                     <TextView
