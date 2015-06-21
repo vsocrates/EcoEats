@@ -25,7 +25,9 @@
                     android:id="@+id/button"
                     android:layout_gravity="right|top"
                     android:textSize="22dp"
-                    android:textColor="#ffffff" />
+                    android:textColor="#ffffff"
+                    android:background="@color/highlighted_text_material_dark"
+                    android:layout_marginRight="10dp" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
@@ -35,14 +37,16 @@
                     android:id="@+id/button2"
                     android:layout_gravity="left|top"
                     android:textSize="22dp"
-                    android:textColor="#ffffff" />
+                    android:textColor="#ffffff"
+                    android:background="@color/highlighted_text_material_dark"
+                    android:layout_marginLeft="10dp" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageView"
                     android:src="@drawable/pizza"
-                    android:layout_gravity="center_horizontal|bottom" />
+                    android:layout_gravity="center" />
 
             </FrameLayout>
 
@@ -165,7 +169,8 @@
                         android:textColor="#ffffff"
                         android:textSize="22dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp" />
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/highlighted_text_material_dark" />
 
                     <Button
                         android:layout_width="wrap_content"
@@ -176,7 +181,8 @@
                         android:textColor="#ffffff"
                         android:textSize="22dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp" />
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/highlighted_text_material_dark" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
