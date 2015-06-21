@@ -20,7 +20,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
 
-    public void changeToDetail(View v){
+    public void changeToDetail(View view){
         Intent intent = new Intent(this, DetailActivity.class);
         startActivity(intent);
     }
