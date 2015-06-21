@@ -43,4 +43,9 @@ public class MainActivity extends ActionBarActivity {
         Intent intent = new Intent(this, FilterActivity.class);
         startActivity(intent);
     }
+
+    public void openMyProfileActivity(MenuItem item){
+        Intent intent = new Intent(this, MyProfileActivity.class);
+        startActivity(intent);
+    }
 }
