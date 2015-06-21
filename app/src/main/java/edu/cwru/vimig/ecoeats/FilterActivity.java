@@ -1,6 +1,7 @@
 package edu.cwru.vimig.ecoeats;
 
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.graphics.Outline;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -152,9 +153,7 @@ public class FilterActivity extends ActionBarActivity implements View.OnClickLis
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings)  {
-            return true;
-        }
+       
 
         return super.onOptionsItemSelected(item);
     }
@@ -180,4 +179,10 @@ public class FilterActivity extends ActionBarActivity implements View.OnClickLis
            cost_view.setText(Integer.toString(progress));
        }
     }
+
+    public void openMain(MenuItem item){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
 }

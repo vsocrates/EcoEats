@@ -31,7 +31,10 @@
             android:label="My Profile"></activity>
         <activity android:name=".FilterActivity"
             android:label="Filter"></activity>
-
+        <activity android:name=".DetailActivity"
+            android:label="Details"></activity>
+        <activity android:name=".ProfileActivity"
+            android:label="Profile"></activity>
     </application>
 
 </manifest>

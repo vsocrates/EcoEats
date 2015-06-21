@@ -2,6 +2,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="edu.cwru.vimig.ecoeats.FilterActivity">
-    <item android:id="@+id/action_settings" android:title="@string/action_settings"
-        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/action_filter" android:icon="@mipmap/ic_launcher"
+        android:title="Filter"
+        android:orderInCategory="150" app:showAsAction="ifRoom" android:onClick="openMain"
+        />
+
+
 </menu>
