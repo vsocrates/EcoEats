@@ -3,4 +3,9 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="steak">Steak</string>
+    <string name="cake">Cake</string>
+    <string name="curry">Curry</string>
+    <string name="pita">Pita</string>
+    <string name="mac">Mac and Cheese</string>
 </resources>
