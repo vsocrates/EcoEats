@@ -288,7 +288,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom|center_horizontal"
                         android:layout_weight="0.33333"
-                        android:text="1 day left sign up" />
+                        android:text="1 day left to sign up" />
 
                 </LinearLayout>
 
@@ -338,7 +338,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="top|center_horizontal"
                         android:layout_weight="0.33333"
-                        android:text="distance away"
+                        android:text="12.9 miles away"
                         android:paddingBottom="35px" />
 
                     <TextView
@@ -348,7 +348,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center|center_horizontal"
                         android:layout_weight="0.33333"
-                        android:text="date and time"
+                        android:text="Monday, June 29"
                         android:paddingBottom="35px" />
 
                     <TextView
@@ -358,18 +358,12 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom|center_horizontal"
                         android:layout_weight="0.33333"
-                        android:text="time left sign up" />
+                        android:text="2 days left to sign up" />
 
                 </LinearLayout>
 
 
             </LinearLayout>
-
-
-
-
-
-
         </LinearLayout>
 
     </ScrollView>
