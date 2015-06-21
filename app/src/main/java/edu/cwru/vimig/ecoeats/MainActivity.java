@@ -2,6 +2,7 @@ package edu.cwru.vimig.ecoeats;
 
 import android.app.ActionBar;
 import android.app.ListActivity;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -30,10 +31,16 @@ public class MainActivity extends ActionBarActivity {
         // as you specify a parent activity in AndroidManifest.xml.
 
         switch (item.getItemId()){
-            case R.id.action_settings:
+            case R.id.action_filter:
+                openFilterActivity(item);
                 return true;
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void openFilterActivity(MenuItem item){
+        Intent intent = new Intent(this, FilterActivity.class);
+        startActivity(intent);
     }
 }

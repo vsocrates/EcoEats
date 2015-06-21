@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="#4caf50">
+
+        <LinearLayout android:id="@+id/profile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:orientation="vertical"
+            android:paddingBottom="5dip"
+            android:padding="10dip"
+            android:weightSum="1">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/imageView"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:layout_below="@+id/profile"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/chef"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_Cook"
+                android:layout_below="@+id/imageView"
+                android:layout_centerHorizontal="true"
+                android:textColor="#372c24"
+                android:text="Sunny"
+                android:layout_gravity="center"
+                style="@style/Base.TextAppearance.AppCompat.Title"
+                android:textSize="25dp" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingBar"
+                android:layout_below="@+id/editText_Cook"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:rating="5.0"/>
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="About Me"
+                android:id="@+id/lblAboutMe"
+                android:layout_below="@+id/ratingBar"
+                android:textSize="18dp" />
+
+            <TextView android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:id="@+id/aboutMe"
+                android:layout_below="@+id/lblAboutMe"
+                android:text="Raised in Michigan. I come from a restaurant family. At one point my immediate family had been running 3 Thai restaurants in metro-Detroit. Collectively, my extended family own a significant amount of all Thai restaurants in the metro-Detroit area. I'd like to share my skills and my cuisine as I've adapted many new cooking techniques and styles to a traditional Thai dish.">
+            </TextView>
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="Contact"
+                android:id="@+id/about"
+                android:layout_below="@+id/aboutMe"
+                android:textSize="18dp" />
+
+            <TextView android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:id="@+id/contact"
+                android:layout_below="@+id/lblContact"
+                android:text="Phone: (929) 239-9783\nEmail: sunny@gmail.com\n">
+            </TextView>
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="Hosted Meals: 6"
+                android:id="@+id/hostedMeal"
+                android:layout_below="@+id/contact"
+                android:textSize="18dp" />
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="Attened Meals: 1"
+                android:id="@+id/attendedMeal"
+                android:layout_below="@+id/hostedMeal"
+                android:textSize="18dp" />
+
+            <Button android:id="@+id/btnMessageMe"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/wallet_holo_blue_light"
+                android:text="Post Meal"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:onClick="onPostMeal" />
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="Reviews (2)"
+                android:id="@+id/lblReview"
+                android:layout_below="@+id/btnMessageMe"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblReview"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="left"
+                    android:src="@drawable/review1"/>
+
+                <TextView android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:textColor="#372c24"
+                    android:text="Wendy"
+                    android:textSize="18dp" />
+
+                <TextView android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:textColor="#372c24"
+                    android:text="May 31, 2015"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+            <TextView android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:id="@+id/review1"
+                android:text="The food was outstanding, the company was very enjoyable and the view was the icing on the cake! This was Thai food that could be served at a restaurant, it was that good. Thanks Patton for a really nice evening.">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/review1"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="left"
+                    android:src="@drawable/review2"/>
+
+                <TextView android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:textColor="#372c24"
+                    android:text="Jason"
+                    android:textSize="18dp" />
+
+                <TextView android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:textColor="#372c24"
+                    android:text="April 8, 2015"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+            <TextView android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:id="@+id/review2"
+                android:text="Sunny made 3 fantastic coconut-based curries that made me want more with every bite I took. Needless to say, I had more than just seconds.">
+            </TextView>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
