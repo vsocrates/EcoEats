@@ -4,6 +4,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:fillViewport="true">
+
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" android:background="#4caf50">
@@ -15,7 +16,8 @@
             android:orientation="vertical"
             android:paddingBottom="5dip"
             android:padding="10dip"
-            android:weightSum="1">
+            android:weightSum="1"
+            android:focusableInTouchMode="false">
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
@@ -32,8 +34,8 @@
                 android:id="@+id/editText_Cook"
                 android:layout_below="@+id/imageView"
                 android:layout_centerHorizontal="true"
-                android:textColor="#372c24"
-                android:text="Sunny"
+                android:textColor="#ffffff"
+                android:text="John Brown"
                 android:layout_gravity="center"
                 style="@style/Base.TextAppearance.AppCompat.Title"
                 android:textSize="25dp" />
@@ -45,41 +47,46 @@
                 android:layout_below="@+id/editText_Cook"
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
-                android:rating="5.0"/>
+                android:rating="5.0"
+                android:numStars="5" />
 
             <TextView android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#372c24"
+                android:textColor="#ffffff"
                 android:text="About Me"
                 android:id="@+id/lblAboutMe"
                 android:layout_below="@+id/ratingBar"
-                android:textSize="18dp" />
+                android:textSize="18dp"
+                android:textStyle="bold" />
 
             <TextView android:layout_height="fill_parent"
                 android:layout_width="wrap_content"
                 android:id="@+id/aboutMe"
                 android:layout_below="@+id/lblAboutMe"
-                android:text="Raised in Michigan. I come from a restaurant family. At one point my immediate family had been running 3 Thai restaurants in metro-Detroit. Collectively, my extended family own a significant amount of all Thai restaurants in the metro-Detroit area. I'd like to share my skills and my cuisine as I've adapted many new cooking techniques and styles to a traditional Thai dish.">
+                android:text="Raised in Michigan. I come from a restaurant family. At one point my immediate family had been running 3 Thai restaurants in metro-Detroit. Collectively, my extended family own a significant amount of all Thai restaurants in the metro-Detroit area. I'd like to share my skills and my cuisine as I've adapted many new cooking techniques and styles to a traditional Thai dish."
+                android:textColor="#ffffff">
             </TextView>
 
             <TextView android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#372c24"
+                android:textColor="#ffffff"
                 android:text="Contact"
                 android:id="@+id/about"
                 android:layout_below="@+id/aboutMe"
-                android:textSize="18dp" />
+                android:textSize="18dp"
+                android:textStyle="bold" />
 
             <TextView android:layout_height="fill_parent"
                 android:layout_width="wrap_content"
                 android:id="@+id/contact"
                 android:layout_below="@+id/lblContact"
-                android:text="Phone: (929) 239-9783\nEmail: sunny@gmail.com\n">
+                android:text="Phone: (929) 239-9783\nEmail: sunnyJohn@gmail.com\n"
+                android:textColor="#ffffff">
             </TextView>
 
             <TextView android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#372c24"
+                android:textColor="#ffffff"
                 android:text="Hosted Meals: 6"
                 android:id="@+id/hostedMeal"
                 android:layout_below="@+id/contact"
@@ -87,7 +94,7 @@
 
             <TextView android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#372c24"
+                android:textColor="#ffffff"
                 android:text="Attened Meals: 1"
                 android:id="@+id/attendedMeal"
                 android:layout_below="@+id/hostedMeal"
@@ -103,11 +110,12 @@
 
             <TextView android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#372c24"
+                android:textColor="#ffffff"
                 android:text="Reviews (2)"
                 android:id="@+id/lblReview"
                 android:layout_below="@+id/btnMessageMe"
-                android:textSize="18dp" />
+                android:textSize="18dp"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -125,14 +133,15 @@
                 <TextView android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dip"
-                    android:textColor="#372c24"
+                    android:textColor="#ffffff"
                     android:text="Wendy"
-                    android:textSize="18dp" />
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
 
                 <TextView android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dip"
-                    android:textColor="#372c24"
+                    android:textColor="#ffffff"
                     android:text="May 31, 2015"
                     android:textSize="18dp" />
 
@@ -140,7 +149,8 @@
             <TextView android:layout_height="fill_parent"
                 android:layout_width="wrap_content"
                 android:id="@+id/review1"
-                android:text="The food was outstanding, the company was very enjoyable and the view was the icing on the cake! This was Thai food that could be served at a restaurant, it was that good. Thanks Patton for a really nice evening.">
+                android:text="The food was outstanding, the company was very enjoyable and the view was the icing on the cake! This was Thai food that could be served at a restaurant, it was that good. Thanks Patton for a really nice evening."
+                android:textColor="#ffffff">
             </TextView>
 
             <LinearLayout
@@ -148,7 +158,7 @@
                 android:layout_height="fill_parent"
                 android:layout_below="@+id/review1"
                 android:layout_margin="10dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal" />
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
@@ -159,23 +169,24 @@
                 <TextView android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dip"
-                    android:textColor="#372c24"
+                    android:textColor="#ffffff"
                     android:text="Jason"
-                    android:textSize="18dp" />
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
 
                 <TextView android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dip"
-                    android:textColor="#372c24"
+                    android:textColor="#ffffff"
                     android:text="April 8, 2015"
-                    android:textSize="18dp" />
+                    android:textSize="18dp"/>
 
             </LinearLayout>
             <TextView android:layout_height="fill_parent"
                 android:layout_width="wrap_content"
                 android:id="@+id/review2"
-                android:text="Sunny made 3 fantastic coconut-based curries that made me want more with every bite I took. Needless to say, I had more than just seconds.">
+                android:text="Sunny made 3 fantastic coconut-based curries that made me want more with every bite I took. Needless to say, I had more than just seconds."
+                android:textColor="#ffffff">
             </TextView>
-        </LinearLayout>
     </RelativeLayout>
 </ScrollView>
