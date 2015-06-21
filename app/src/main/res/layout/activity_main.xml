@@ -29,7 +29,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="top"
                         android:src="@drawable/steak"
-                        android:layout_weight="0.85" />
+                        android:layout_weight="0.85"
+                        android:onClick="changeToDetail" />
 
                     <TextView
                         android:textColor="#ffffff"

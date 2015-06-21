@@ -1,1 +1,1 @@
-include ':app', 'libs:Ripple', ':libs:Ripple', ':libs'
+include 'libs:Ripple', ':libs:Ripple', ':app', ':libs'
