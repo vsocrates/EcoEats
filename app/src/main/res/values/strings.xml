@@ -8,4 +8,5 @@
     <string name="pita">Pita</string>
     <string name="mac">Mac and Cheese</string>
     <string name="title_activity_filter">FilterActivity</string>
+    <string name="distance">Distance Away: </string>
 </resources>
