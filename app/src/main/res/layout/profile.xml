@@ -7,7 +7,7 @@
 
     <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" android:background="#ffffff">
+        android:layout_height="wrap_content" android:background="#4caf50">
 
         <LinearLayout android:id="@+id/profile"
             android:layout_width="fill_parent"
@@ -25,7 +25,7 @@
                 android:layout_gravity="center"
                 android:layout_below="@+id/profile"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/profile"/>
+                android:src="@drawable/chef"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -34,7 +34,7 @@
                 android:layout_below="@+id/imageView"
                 android:layout_centerHorizontal="true"
                 android:textColor="#372c24"
-                android:text="Jessie"
+                android:text="Sunny"
                 android:layout_gravity="center"
                 style="@style/Base.TextAppearance.AppCompat.Title"
                 android:textSize="25dp" />
@@ -46,7 +46,7 @@
                 android:layout_below="@+id/editText_Cook"
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
-                android:rating="4.5"/>
+                android:rating="5.0"/>
 
             <TextView android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
                 android:layout_width="wrap_content"
                 android:id="@+id/contact"
                 android:layout_below="@+id/lblContact"
-                android:text="Phone: (929) 239-9783\nEmail: jessie@gmail.com\n">
+                android:text="Phone: (929) 239-9783\nEmail: sunny@gmail.com\n">
             </TextView>
 
             <TextView android:layout_width="fill_parent"
@@ -121,7 +121,7 @@
                     android:layout_height="50dp"
                     android:scaleType="centerCrop"
                     android:layout_gravity="left"
-                    android:src="@drawable/profile"/>
+                    android:src="@drawable/review1"/>
 
                 <TextView android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
@@ -155,13 +155,13 @@
                     android:layout_height="50dp"
                     android:scaleType="centerCrop"
                     android:layout_gravity="left"
-                    android:src="@drawable/profile"/>
+                    android:src="@drawable/review2"/>
 
                 <TextView android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dip"
                     android:textColor="#372c24"
-                    android:text="Rita"
+                    android:text="Jason"
                     android:textSize="18dp" />
 
                 <TextView android:layout_width="fill_parent"
@@ -175,7 +175,7 @@
             <TextView android:layout_height="fill_parent"
                 android:layout_width="wrap_content"
                 android:id="@+id/review2"
-                android:text="Jessie made 3 fantastic coconut-based curries that made me want more with every bite I took. Needless to say, I had more than just seconds.">
+                android:text="Sunny made 3 fantastic coconut-based curries that made me want more with every bite I took. Needless to say, I had more than just seconds.">
             </TextView>
         </LinearLayout>
     </RelativeLayout>
