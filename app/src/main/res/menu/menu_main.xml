@@ -9,7 +9,7 @@
 
     <item android:id="@+id/action_profile" android:icon="@mipmap/ic_launcher"
         android:title="My Profile"
-        android:orderInCategory="160" app:showAsAction="never" android:onClick="openFilterActivity"
+        android:orderInCategory="160" app:showAsAction="never" android:onClick="openMyProfileActivity"
         />
 
 </menu>

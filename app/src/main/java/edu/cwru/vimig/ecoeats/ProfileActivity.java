@@ -7,12 +7,11 @@ import android.view.View;
 /**
  * Created by JESSIE on 6/20/15.
  */
-public class Profile extends Activity {
+public class ProfileActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.profile);
     }
-
 
 }
