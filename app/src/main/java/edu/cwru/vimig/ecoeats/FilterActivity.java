@@ -4,6 +4,7 @@ import android.annotation.TargetApi;
 import android.graphics.Outline;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -52,8 +53,8 @@ public class FilterActivity extends ActionBarActivity implements View.OnClickLis
 
         int buttonsSpacing = (int) getResources().getDimension(R.dimen.activity_horizontal_margin);
         int buttonSize = (int) getResources().getDimension(R.dimen.button_size);
-        String[] names = {"Indian", "Mexican", "Italian", "American", "Chinese", "Other"};
-
+        String[] names = {"Veg.", "No Peanuts", "Activity", "Mexican", "Chinese", "Other"};
+        int textSize = 15;
         for (int i = 0; i < 3; i++) {
             Button button = (Button) getLayoutInflater().inflate(R.layout.circular_button_layout, buttonsContainer, false);
             button.setText(names[i]);
@@ -61,14 +62,17 @@ public class FilterActivity extends ActionBarActivity implements View.OnClickLis
             if (i % 3 == 1) {
                 LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.FILL_PARENT);
                 params.gravity = Gravity.LEFT;
+                button.setTextSize(TypedValue.COMPLEX_UNIT_SP, textSize);
                 buttonsContainer.addView(button, params);
             } else if (i % 3 == 2) {
                 LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.FILL_PARENT);
                 params.gravity = Gravity.CENTER;
+                button.setTextSize(TypedValue.COMPLEX_UNIT_SP, textSize);
                 buttonsContainer.addView(button, params);
             } else if (i % 3 == 0) {
                 LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.FILL_PARENT);
                 params.gravity = Gravity.RIGHT;
+                button.setTextSize(TypedValue.COMPLEX_UNIT_SP, textSize);
                 buttonsContainer.addView(button, params);
             }
             button.setSelected(true);
@@ -85,14 +89,17 @@ public class FilterActivity extends ActionBarActivity implements View.OnClickLis
                 if (j % 3 == 1) {
                     LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.FILL_PARENT);
                     params.gravity = Gravity.LEFT;
+                    button2.setTextSize(TypedValue.COMPLEX_UNIT_SP, textSize);
                     buttonsContainer2.addView(button2, params);
                 } else if (j % 3 == 2) {
                     LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.FILL_PARENT);
                     params.gravity = Gravity.CENTER;
+                    button2.setTextSize(TypedValue.COMPLEX_UNIT_SP, textSize);
                     buttonsContainer2.addView(button2, params);
                 } else if (j % 3 == 0) {
                     LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.FILL_PARENT);
                     params.gravity = Gravity.RIGHT;
+                    button2.setTextSize(TypedValue.COMPLEX_UNIT_SP, textSize);
                     buttonsContainer2.addView(button2, params);
                 }
 

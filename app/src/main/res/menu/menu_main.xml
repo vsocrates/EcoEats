@@ -6,4 +6,10 @@
         android:title="Filter"
         android:orderInCategory="150" app:showAsAction="ifRoom" android:onClick="openFilterActivity"
         />
+
+    <item android:id="@+id/action_profile" android:icon="@mipmap/ic_launcher"
+        android:title="My Profile"
+        android:orderInCategory="160" app:showAsAction="never" android:onClick="openFilterActivity"
+        />
+
 </menu>
