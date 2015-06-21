@@ -24,6 +24,7 @@
             android:label="EcoEats"></activity>
         <activity android:name=".RegisterActivity"
             android:label="Register New Account"></activity>
+        <activity android:name=".FilterActivity" android:label="Filter Options"/>
     </application>
     <!--<application android:icon="@mipmap/icon" android:label="@string/app_name">
         <activity android:name=".LoginActivity"

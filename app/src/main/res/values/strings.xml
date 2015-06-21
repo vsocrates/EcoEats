@@ -9,4 +9,6 @@
     <string name="mac">Mac and Cheese</string>
     <string name="title_activity_filter">FilterActivity</string>
     <string name="distance">Distance Away: </string>
+    <string name="cuisine">Cuisine: </string>
+    <string name="cost">Cost:   $</string>
 </resources>
