@@ -3,7 +3,8 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#4caf50">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -28,14 +29,15 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="top"
                         android:src="@drawable/steak"
-                        android:layout_weight="0.85"/>
+                        android:layout_weight="0.85" />
 
                     <TextView
+                        android:textColor="#ffffff"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="top|center_horizontal"
                         android:layout_weight="0.15"
-                        android:text="" />
+                        android:text="Steak" />
 
                 </LinearLayout>
 
@@ -44,34 +46,37 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right|center_vertical"
-                    android:layout_weight="0.5"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_weight=".1">
 
                     <TextView
+                        android:textColor="#ffffff"
                         android:id="@+id/distance_away"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="top|center_horizontal"
                         android:layout_weight="0.33333"
-                        android:text="distance away"
-                        android:paddingBottom="35px"/>
+                        android:text="2.3 miles away"
+                        android:paddingBottom="35px" />
 
                     <TextView
+                        android:textColor="#ffffff"
                         android:id="@+id/date_of_event3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center|center_horizontal"
                         android:layout_weight="0.33333"
-                        android:text="date and time"
-                        android:paddingBottom="35px"/>
+                        android:paddingBottom="35px"
+                        android:text="Saturday, June 27, 6PM" />
 
                     <TextView
+                        android:textColor="#ffffff"
                         android:id="@+id/time_left3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom|center_horizontal"
                         android:layout_weight="0.33333"
-                        android:text="time left sign up" />
+                        android:text="6 hours remaining" />
 
                 </LinearLayout>
 
@@ -94,14 +99,15 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="top"
                         android:src="@drawable/mac"
-                        android:layout_weight="0.85"/>
+                        android:layout_weight="0.85" />
 
                     <TextView
+                        android:textColor="#ffffff"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="top|center_horizontal"
                         android:layout_weight="0.15"
-                        android:text="name" />
+                        android:text="Macaroni &amp; Cheese" />
 
                 </LinearLayout>
 
@@ -110,34 +116,38 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right|center_vertical"
-                    android:layout_weight="0.5"
-                    android:orientation="vertical">
+                    android:layout_weight="0.3"
+                    android:orientation="vertical"
+                    android:id="@+id/">
 
                     <TextView
+                        android:textColor="#ffffff"
                         android:id="@+id/distance_away2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="top|center_horizontal"
                         android:layout_weight="0.33333"
-                        android:text="distance away"
-                        android:paddingBottom="35px"/>
+                        android:text="4.1 miles away"
+                        android:paddingBottom="35px" />
 
                     <TextView
+                        android:textColor="#ffffff"
                         android:id="@+id/date_of_event2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center|center_horizontal"
                         android:layout_weight="0.33333"
-                        android:text="date and time"
-                        android:paddingBottom="35px"/>
+                        android:text="Sunday, June 28, 2 PM"
+                        android:paddingBottom="35px" />
 
                     <TextView
+                        android:textColor="#ffffff"
                         android:id="@+id/time_left2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom|center_horizontal"
                         android:layout_weight="0.33333"
-                        android:text="time left sign up" />
+                        android:text="14 hours left to sign up" />
 
                 </LinearLayout>
 
@@ -160,14 +170,17 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="top"
                         android:src="@drawable/pita"
-                        android:layout_weight="0.85"/>
+                        android:layout_weight="0.85"
+                        android:id="@+id/" />
 
                     <TextView
+                        android:textColor="#ffffff"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="top|center_horizontal"
                         android:layout_weight="0.15"
-                        android:text="name" />
+                        android:text="Pita"
+                        android:id="@+id/" />
 
                 </LinearLayout>
 
@@ -176,34 +189,38 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right|center_vertical"
-                    android:layout_weight="0.5"
-                    android:orientation="vertical">
+                    android:layout_weight="0.2"
+                    android:orientation="vertical"
+                    android:id="@+id/">
 
                     <TextView
+                        android:textColor="#ffffff"
                         android:id="@+id/distance_away3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="top|center_horizontal"
                         android:layout_weight="0.33333"
-                        android:text="distance away"
-                        android:paddingBottom="35px"/>
+                        android:text="7.4 miles away"
+                        android:paddingBottom="35px" />
 
                     <TextView
+                        android:textColor="#ffffff"
                         android:id="@+id/date_of_event3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center|center_horizontal"
                         android:layout_weight="0.33333"
-                        android:text="date and time"
-                        android:paddingBottom="35px"/>
+                        android:text="Sunday, June 28, 12 PM"
+                        android:paddingBottom="35px" />
 
                     <TextView
+                        android:textColor="#ffffff"
                         android:id="@+id/time_left3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom|center_horizontal"
                         android:layout_weight="0.33333"
-                        android:text="time left sign up" />
+                        android:text="14 hours away" />
 
                 </LinearLayout>
 
@@ -226,14 +243,17 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="top"
                         android:src="@drawable/curry"
-                        android:layout_weight="0.85"/>
+                        android:layout_weight="0.85"
+                        android:id="@+id/" />
 
                     <TextView
+                        android:textColor="#ffffff"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="top|center_horizontal"
                         android:layout_weight="0.15"
-                        android:text="name" />
+                        android:text="Curry"
+                        android:id="@+id/" />
 
                 </LinearLayout>
 
@@ -246,24 +266,27 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:textColor="#ffffff"
                         android:id="@+id/distance_away4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="top|center_horizontal"
                         android:layout_weight="0.33333"
                         android:text="distance away"
-                        android:paddingBottom="35px"/>
+                        android:paddingBottom="35px" />
 
                     <TextView
+                        android:textColor="#ffffff"
                         android:id="@+id/date_of_event4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center|center_horizontal"
                         android:layout_weight="0.33333"
                         android:text="date and time"
-                        android:paddingBottom="35px"/>
+                        android:paddingBottom="35px" />
 
                     <TextView
+                        android:textColor="#ffffff"
                         android:id="@+id/time_left4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -292,9 +315,10 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="top"
                         android:src="@drawable/cake"
-                        android:layout_weight="0.85"/>
+                        android:layout_weight="0.85" />
 
                     <TextView
+                        android:textColor="#ffffff"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="top|center_horizontal"
@@ -312,24 +336,27 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:textColor="#ffffff"
                         android:id="@+id/distance_away5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="top|center_horizontal"
                         android:layout_weight="0.33333"
                         android:text="distance away"
-                        android:paddingBottom="35px"/>
+                        android:paddingBottom="35px" />
 
                     <TextView
+                        android:textColor="#ffffff"
                         android:id="@+id/date_of_event"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center|center_horizontal"
                         android:layout_weight="0.33333"
                         android:text="date and time"
-                        android:paddingBottom="35px"/>
+                        android:paddingBottom="35px" />
 
                     <TextView
+                        android:textColor="#ffffff"
                         android:id="@+id/time_left"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

@@ -16,7 +16,8 @@
             android:orientation="vertical"
             android:paddingBottom="5dip"
             android:padding="10dip"
-            android:weightSum="1">
+            android:weightSum="1"
+            android:focusableInTouchMode="false">
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
@@ -157,7 +158,8 @@
                 android:layout_height="fill_parent"
                 android:layout_below="@+id/review1"
                 android:layout_margin="10dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:id="@+id/">
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
@@ -178,7 +180,8 @@
                     android:layout_marginLeft="20dip"
                     android:textColor="#ffffff"
                     android:text="April 8, 2015"
-                    android:textSize="18dp" />
+                    android:textSize="18dp"
+                    android:id="@+id/" />
 
             </LinearLayout>
             <TextView android:layout_height="fill_parent"
